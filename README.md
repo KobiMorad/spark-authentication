@@ -14,7 +14,7 @@ Usage
 Configure basic authentication for your given path(s):
 
 ```java
-    before(new BasicAuthenticationFilter("/path/*", new AuthenticationDetails("expected-username", "expected-password")));
+before(new BasicAuthenticationFilter("/path/*", new AuthenticationDetails("expected-username", "expected-password")));
 ```
 
 
