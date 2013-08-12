@@ -3,7 +3,7 @@ Spark Authentication
 
 [![Build Status](https://travis-ci.org/qmetric/spark-authentication.png)](https://travis-ci.org/qmetric/spark-authentication)
 
-Authentication library for [Spark](http://www.sparkjava.com/), included:
+Authentication library for [Spark](http://www.sparkjava.com/) - included:
 
 * [Basic authentication](http://en.wikipedia.org/wiki/Basic_access_authentication)
 
