@@ -13,6 +13,8 @@ public class BasicAuthenticationFilter extends Filter
 
     private static final int NUMBER_OF_AUTHENTICATION_FIELDS = 2;
 
+    private static final String ACCEPT_ALL_TYPES = "*";
+
     private final AuthenticationDetails authenticationDetails;
 
     public BasicAuthenticationFilter(final AuthenticationDetails authenticationDetails)
@@ -22,7 +24,7 @@ public class BasicAuthenticationFilter extends Filter
 
     public BasicAuthenticationFilter(final String path, final AuthenticationDetails authenticationDetails)
     {
-        super(path);
+        super(path, ACCEPT_ALL_TYPES);
         this.authenticationDetails = authenticationDetails;
     }
 
