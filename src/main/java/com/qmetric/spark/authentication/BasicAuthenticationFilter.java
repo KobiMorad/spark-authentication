@@ -2,12 +2,14 @@ package com.qmetric.spark.authentication;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
-import spark.Filter;
+import spark.FilterImpl;
 import spark.Request;
 import spark.Response;
 import spark.utils.SparkUtils;
 
-public class BasicAuthenticationFilter extends Filter
+import static spark.Spark.halt;
+
+public class BasicAuthenticationFilter extends FilterImpl
 {
     private static final String BASIC_AUTHENTICATION_TYPE = "Basic";
 
